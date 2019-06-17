@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选择器综合练习</title>
+	<style type="text/css">
+	.sitenav a
+	{
+		/*链接登录的颜色改为红色*/
+		color: red;
+	}
+	.nav ul li a
+	{
+		/*主导航栏里的链接颜色都是紫色*/
+		color: purple;
+	}
+	.nav,
+	.sitenav
+	{
+		/*导航栏里的文字都是14像素，微软雅黑*/
+		font-size: 25px;
+		font-style: "microsoft yahei";
+	}
+	.nav >ul >li >a
+	{
+		/*主导航栏中的一级菜单颜色改为绿色*/
+		color: green;
+	}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+		<li><a href="#">公司首页</a></li>
+		<li><a href="#">公示简介</a></li>
+		<li><a href="#">公示产品</a></li>
+		<li>
+			<a href="#">联系我们</a> 
+			<ul>
+				<li><a href="#">公司电话</a></li>
+				<li><a href="#">公司地址</a></li>
+				<li><a href="#">公示邮箱</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+	<div class="sitenav">
+		<div class="site-1">左侧导航栏</div>
+		<div class="site-2"><a href="#">登录</a></div>
+	</div>
+</body>
+</html>
